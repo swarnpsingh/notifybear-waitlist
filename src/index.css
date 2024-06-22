@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  color: #ffffff;
+  background-color: #121212;
+  font-family: "Poppins", sans-serif;
+  /* background-image: url('./assets/image2.png');
+  background-repeat: no-repeat;
+  background-position: bottom center; */
+}
+
+.blob-background{
+  background-image: url('./assets/image2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center -200px;
+}
+
+.magicpattern { 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23FF69B4%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%234C00FF%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%2300BFFF%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M774.5 678Q616 856 416.5 781t-255-321q-55.5-246 200-282.5t413.5 143Q933 500 774.5 678Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M774.5 678Q616 856 416.5 781t-255-321q-55.5-246 200-282.5t413.5 143Q933 500 774.5 678Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+
+.img{
+  width: 28rem;
+}
+
+.hover:hover{
+  background-color: #0056B3;
+  color: white;
+  /* border: 2px solid white; */
+}
