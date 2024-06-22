@@ -17,7 +17,11 @@ function footer() {
           <p className="text-lg mt-2">
             We'll notify you about our progress through emails.
           </p>
-          <button className="bg-white text-black hover py-2 px-4 rounded-lg text-lg mt-10">Join Waitlist</button>
+          <a href="https://tally.so/r/wvB6ad" target="_blank" rel="noopener noreferrer">
+                <button className="text-xl text-black bg-white py-2 px-4 mt-10 rounded-lg cursor-pointer hover:bg-[#0056B3] hover:text-white">
+                  Join Waitlist
+                </button>
+              </a>
         </div>
       </div>
       <div className='w-full flex justify-between items-center'>
@@ -28,7 +32,7 @@ function footer() {
             <AiOutlineInstagram className='text-3xl cursor-pointer' />
             <AiOutlineTwitter className='text-3xl cursor-pointer' />
             <AiFillLinkedin className='text-3xl cursor-pointer' />
-            <AiFillYoutube className='text-3xl cursor-pointer' />
+            {/* <AiFillYoutube className='text-3xl cursor-pointer' /> */}
         </div>
     </div>
     </div>

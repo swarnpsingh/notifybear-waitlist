@@ -1,15 +1,13 @@
 import React from "react";
 import Navbar from "./navbar";
 import comingSoon from "../assets/coming1.svg";
-import blob from "../assets/image1.svg";
-import About from "./about";
 
 function Home() {
   return (
     <>
       <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
         <Navbar />
-        <div className="relative flex-grow flex flex-row items-center justify-center z-10 text-center">
+        <div className="relative flex-grow flex flex-col items-center justify-center text-center z-10">
           <div className="flex flex-col items-center">
             <div>
               <img src={comingSoon} alt="Coming Soon" className="img" />
@@ -19,10 +17,12 @@ function Home() {
                 From Every Screen To Your Pocket.
               </h1>
             </div>
-            <div className="flex items-center rounded-lg text-lg cursor-pointer">
-              <p className="bg-white text-black hover py-2 px-4 rounded-lg">
-                Join Waitlist
-              </p>
+            <div className="z-20">
+              <a href="https://tally.so/r/wvB6ad" target="_blank" rel="noopener noreferrer">
+                <button className="text-xl text-black bg-white py-2 px-4 rounded-lg cursor-pointer hover:bg-[#0056B3] hover:text-white">
+                  Join Waitlist
+                </button>
+              </a>
             </div>
           </div>
         </div>
