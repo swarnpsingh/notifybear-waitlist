@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="relative flex flex-col bg-[#121212] w-full z-[-2] overflow-hidden">
         {/* <Navbar /> */}
-        <div className="absolute sm:w-4/6 w-full sm:top-44 top-44 sm:left-[-300px] left-[-200px] z-[-1]">
+        <div className="absolute sm:w-4/6 w-full sm:top-44 top-96 sm:left-[-300px] left-[-200px] z-[-1]">
           <svg
             className="blur-[100px] sm:blur-[150px]"
             viewBox="0 0 1000 1000"
@@ -61,7 +61,7 @@ function App() {
             </g>
           </svg>
         </div>
-        <div className="absolute sm:w-4/6 w-full sm:top-[1000px] top-[2100px] sm:right-[-350px] right-[-150px] z-[-1] rotate-180">
+        <div className="absolute sm:w-4/6 w-full sm:top-[1000px] bottom-[500px] sm:right-[-350px] right-[-150px] z-[-1] rotate-180">
           <svg
             className="blur-[80px] sm:blur-[150px]"
             viewBox="0 0 1000 1000"

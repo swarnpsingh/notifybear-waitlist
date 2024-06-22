@@ -9,7 +9,7 @@ import fourth from '../assets/fourth.svg';
 function About() {
   return (
     <>
-      <div className="px-8 py-6 sm:px-16 sm:py-12 sm:flex gap-6 w-full justify-center">
+      <div className="px-8 py-2 sm:px-16 sm:py-12 sm:flex gap-6 w-full justify-center">
         <div className="w-full sm:w-auto sm:flex-none mx-auto">
           <img src={mockup} alt="mockup" className='w-3/4 sm:w-auto mx-auto' />
         </div>
