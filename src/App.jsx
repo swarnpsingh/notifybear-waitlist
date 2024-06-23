@@ -3,6 +3,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Footer from "./components/footer";
 import Blob from "./components/blobs"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <About />
         <Footer />
+        <Analytics />
       </div>
     </>
   );
