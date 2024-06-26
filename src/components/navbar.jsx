@@ -5,6 +5,8 @@ import {
   AiFillLinkedin,
   AiFillYoutube
 } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import icon from '../assets/icon-mascot.png';
 
 function Navbar() {
@@ -20,7 +22,7 @@ function Navbar() {
             <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <AiOutlineTwitter className='text-2xl sm:text-3xl cursor-pointer' />
+            <FontAwesomeIcon icon={faXTwitter} className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
           <a href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin className='text-2xl sm:text-3xl cursor-pointer' />
