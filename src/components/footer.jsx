@@ -5,6 +5,8 @@ import {
   AiFillLinkedin,
   AiFillYoutube
 } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function footer() {
   return (
@@ -28,10 +30,16 @@ function footer() {
         <div>
             <h1 className=''>&copy; 2024 notifybear. All rights reserved.</h1>
         </div>
-        <div className='flex gap-6'>
-            <AiOutlineInstagram className='text-3xl cursor-pointer' />
-            <AiOutlineTwitter className='text-3xl cursor-pointer' />
-            <AiFillLinkedin className='text-3xl cursor-pointer' />
+        <div className='flex sm:gap-6 gap-2'>
+        <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
+            <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
+          </a>
+          <a href="https://x.com/notifybear" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} className='text-2xl sm:text-3xl cursor-pointer' />
+          </a>
+          <a href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
+            <AiFillLinkedin className='text-2xl sm:text-3xl cursor-pointer' />
+          </a>
             {/* <AiFillYoutube className='text-3xl cursor-pointer' /> */}
         </div>
     </div>
