@@ -21,7 +21,7 @@ function Navbar() {
           <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
             <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/notifybear" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faXTwitter} className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
           <a href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
