@@ -5,10 +5,10 @@ import { config } from "dotenv";
 config();
 
 Router.post("/", async (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header("Access-Control-Allow-Origin", "https://notifybear.com");
   res.header("Referrer-Policy", "no-referrer-when-downgrade");
 
-  const redirectUrl = "http://127.0.0.1:3000/oauth";
+  const redirectUrl = "https://notifybear-waitlist.onrender.com/oauth";
 
   const oAuth2Client = new OAuth2Client(
     process.env.GOOGLE_CLIENT_ID,

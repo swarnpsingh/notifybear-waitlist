@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 
 
 async function fetchUserData() {
-  const response = await fetch("http://127.0.0.1:3000/oauth/user", {
+  const response = await fetch("https://notifybear-waitlist.onrender.com/oauth/user", {
     method: "get",
   }).then(response => response.json());
 

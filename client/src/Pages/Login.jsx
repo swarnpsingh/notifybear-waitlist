@@ -9,7 +9,7 @@ function navigate(url) {
 }
 
 async function auth() {
-  const response = await fetch("http://127.0.0.1:3000/request", {
+  const response = await fetch("https://notifybear-waitlist.onrender.com/request", {
     method: "post",
   }).then((response) => response.json());
   navigate(response.url);

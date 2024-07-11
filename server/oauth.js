@@ -47,7 +47,7 @@ Router.get("/", async (req, res) => {
   console.log("Authorization code:", code);
 
   try {
-    const redirectUrl = "http://127.0.0.1:3000/oauth";
+    const redirectUrl = "https://notifybear-waitlist.onrender.com/oauth";
     const oAuth2Client = new OAuth2Client(
       process.env.GOOGLE_CLIENT_ID,
       process.env.GOOGLE_CLIENT_SECRET,
@@ -85,7 +85,7 @@ Router.get("/", async (req, res) => {
     // }
     await userRecord.save();
 
-    res.redirect(303, "http://localhost:5173/");
+    res.redirect(303, "https://notifybear.com/");
   } catch (error) {
     console.error("Error during OAuth2 login:", error);
     res.status(500).send("Internal Server Error");
