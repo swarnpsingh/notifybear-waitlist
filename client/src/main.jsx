@@ -7,6 +7,8 @@ import Home from './components/home.jsx';
 import Profile from './Pages/Profile.jsx';
 import Login from './Pages/Login.jsx';
 import { UserProvider } from './Pages/UserContext.jsx'; // Import the UserProvider
+import PrivacyPolicy from './Pages/PrivacyPolicy.jsx';
+import Terms from './Pages/Terms.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +16,8 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='profile' element={<Profile />} />
       <Route path='login' element={<Login />} />
+      <Route path='privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='terms' element={<Terms />} />
     </Route>
   )
 );

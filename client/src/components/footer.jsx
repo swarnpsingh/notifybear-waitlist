@@ -1,4 +1,4 @@
-import React from "react";
+import {React} from "react";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
 
 function footer() {
   return (
@@ -20,18 +21,22 @@ function footer() {
             We'll notify you about our progress through emails.
           </p>
           <a href="https://tally.so/r/wvB6ad" target="_blank" rel="noopener noreferrer">
-                <button className="text-xl text-black bg-white py-2 px-4 mt-10 rounded-lg cursor-pointer hover:bg-[#0056B3] hover:text-white">
-                  Join Waitlist
-                </button>
-              </a>
+            <button className="text-xl text-black bg-white py-2 px-4 mt-10 rounded-lg cursor-pointer hover:bg-[#0056B3] hover:text-white">
+              Join Waitlist
+            </button>
+          </a>
         </div>
       </div>
-      <div className='w-full flex justify-between items-center'>
+      <div className='w-full flex justify-between'>
         <div>
-            <h1 className=''>&copy; 2024 notifybear. All rights reserved.</h1>
+          <h1 className=''>&copy; 2024 notifybear. All rights reserved.</h1>
+        </div>
+        <div className="flex flex-col gap-4">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms">Terms and Conditions</Link>
         </div>
         <div className='flex sm:gap-6 gap-2'>
-        <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
             <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
           <a href="https://x.com/notifybear" target="_blank" rel="noopener noreferrer">
@@ -40,9 +45,9 @@ function footer() {
           <a href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin className='text-2xl sm:text-3xl cursor-pointer' />
           </a>
-            {/* <AiFillYoutube className='text-3xl cursor-pointer' /> */}
+          {/* <AiFillYoutube className='text-3xl cursor-pointer' /> */}
         </div>
-    </div>
+      </div>
     </div>
   );
 }

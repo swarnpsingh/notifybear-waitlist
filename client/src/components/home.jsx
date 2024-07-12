@@ -4,6 +4,7 @@ import comingSoon from "../assets/coming1.svg";
 import About from "./about";
 import Footer from "./footer";
 import { useUser } from "../Pages/UserContext";
+import Blob from "./blobs.jsx"
 
 function Home() {
   const { fetchUserData } = useUser();
@@ -14,6 +15,7 @@ function Home() {
 
   return (
     <>
+    <Blob />
       <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
         <Navbar />
         <div className="relative flex-grow flex flex-col items-center justify-center text-center z-10">

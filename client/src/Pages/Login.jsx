@@ -3,6 +3,7 @@ import Navbar from '../components/navbar';
 import GoogleButton from 'react-google-button';
 import { useUser } from '../Pages/UserContext';
 import "../App.css";
+import Blob from "../components/blobs"
 
 function navigate(url) {
   window.location.href = url;
@@ -24,6 +25,7 @@ function Login() {
 
   return (
     <>
+    <Blob />
       <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
         <Navbar />
         <div className="relative flex-grow flex items-center justify-center text-center z-10">

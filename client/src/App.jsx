@@ -13,7 +13,7 @@ function App() {
       <div className="relative flex flex-col bg-[#121212] w-full overflow-hidden">
         <ToastContainer/>
         <Outlet/>
-        <Blob />
+        {/* <Blob /> */}
         <Analytics />
         
       </div>
