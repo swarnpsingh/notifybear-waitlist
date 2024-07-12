@@ -6,18 +6,18 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Home from './components/home.jsx';
 import Profile from './Pages/Profile.jsx';
 import Login from './Pages/Login.jsx';
-import { UserProvider } from './Pages/UserContext.jsx';
 import PrivacyPolicy from './Pages/PrivacyPolicy.jsx';
 import Terms from './Pages/Terms.jsx';
+import { UserProvider } from './Pages/UserContext.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index element={<Home />} />
-      <Route path='/profile' element={<Profile />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-      <Route path='/terms' element={<Terms />} />
+      <Route path='profile' element={<Profile />} />
+      <Route path='login' element={<Login />} />
+      <Route path='privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='terms' element={<Terms />} />
     </Route>
   )
 );
