@@ -16,22 +16,24 @@ function Navbar() {
 
   return (
     <>
-      <div className='w-full flex justify-between items-center'>
+      <div className='w-full flex sm:flex-row justify-between items-center text-white'>
         <Link to="/">
-        <div className='flex justify-center items-center gap-2 sm:gap-4'>
-          <img src={icon} alt="icon" className='w-10' />
-          <h1 className='font-bold text-xl'>notifybear</h1>
-        </div></Link>
+          <div className='flex justify-center items-center gap-2 sm:gap-4'>
+            <img src={icon} alt="icon" className='sm:w-10 w-8' />
+            <h1 className='font-bold sm:text-xl'>notifybear</h1>
+          </div></Link>
         <div className='flex items-center sm:gap-6 gap-2'>
-          <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
-            <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
-          </a>
-          <a href="https://x.com/notifybear" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} className='text-2xl sm:text-3xl cursor-pointer' />
-          </a>
-          <a className='mr-5' href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
-            <AiFillLinkedin className='text-2xl sm:text-3xl cursor-pointer' />
-          </a>
+          <div className='sm:flex items-center sm:gap-6 gap-2 hidden sm:block'>
+            <a href="https://www.instagram.com/notifybear.com_/" target="_blank" rel="noopener noreferrer">
+              <AiOutlineInstagram className='text-2xl sm:text-3xl cursor-pointer' />
+            </a>
+            <a href="https://x.com/notifybear" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faXTwitter} className='text-2xl sm:text-3xl cursor-pointer' />
+            </a>
+            <a className='mr-5' href="https://www.linkedin.com/company/103652407/admin/feed/posts/" target="_blank" rel="noopener noreferrer">
+              <AiFillLinkedin className='text-2xl sm:text-3xl cursor-pointer' />
+            </a>
+          </div>
 
           <div>
             {userData ? (
@@ -40,7 +42,7 @@ function Navbar() {
               </Link>
             ) : (
               <Link to="/login">
-                <button className="cursor-pointer bg-[#0056B3] hover:bg-white hover:text-black py-2 px-4 rounded-lg textlgl">Sign In As Creator</button>
+                <button className="cursor-pointer bg-[#0056B3] hover:bg-white hover:text-black sm:py-2 sm:px-4 py-1 px-2 rounded-lg sm:text-lg text-sm w-24 md:w-48">Sign In As Creator</button>
               </Link>
             )}
           </div>

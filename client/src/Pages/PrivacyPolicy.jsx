@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 function PrivacyPolicy() {
     return (
         <>
-            <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
+            <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col text-white">
                 <Navbar />
                 <div className='mt-10'>
                     <h1 className='font-bold text-2xl'>Privacy Policy</h1>
@@ -194,6 +195,7 @@ function PrivacyPolicy() {
                     </ul>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

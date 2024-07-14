@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 function footer() {
   return (
-    <div className="h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
+    <div className="mt-10 md:mt-0 h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col text-white">
       <div className="flex-grow flex flex-col items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold tracking-wide">
@@ -27,11 +27,11 @@ function footer() {
           </a>
         </div>
       </div>
-      <div className='w-full flex justify-between'>
+      <div className='w-full flex flex-col gap-6 sm:flex-row justify-between'>
         <div>
           <h1 className=''>&copy; 2024 notifybear. All rights reserved.</h1>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2 sm:gap-4">
           <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/terms">Terms and Conditions</Link>
         </div>

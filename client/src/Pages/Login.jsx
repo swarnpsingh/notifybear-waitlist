@@ -4,6 +4,7 @@ import GoogleButton from 'react-google-button';
 import { useUser } from '../Pages/UserContext';
 import "../App.css";
 import Blob from "../components/blobs"
+import Footer from "../components/footer"
 
 function navigate(url) {
   window.location.href = url;
@@ -25,8 +26,8 @@ function Login() {
 
   return (
     <>
-    <Blob />
-      <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col">
+      <Blob />
+      <div className="min-h-screen w-full px-8 py-6 sm:px-16 sm:py-12 flex flex-col text-white">
         <Navbar />
         <div className="relative flex-grow flex items-center justify-center text-center z-10">
           <div className="min-h-52 min-w-96 px-4 py-4 rounded-lg bg-slate-600 flex flex-col items-center gap-4 text-center">
@@ -35,6 +36,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
