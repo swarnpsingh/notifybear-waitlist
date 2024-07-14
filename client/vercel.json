@@ -1,61 +1,44 @@
 {
-    "version": 2,
-    "name": "notifybear",
-    "builds": [
-      {
-        "src": "client/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "client/dist"
-        }
-      },
-      {
-        "src": "server/index.js",
-        "use": "@vercel/node"
+  "version": 2,
+  "name": "notifybear",
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "client/dist"
       }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
-      },
-      {
-        "src": "/oauth/(.*)",
-        "dest": "/oauth/$1"
-      },
-      {
-        "src": "/privacy-policy",
-        "dest": "/client/index.html"
-      },
-      {
-        "src": "/terms",
-        "dest": "/client/index.html"
-      },
-      {
-        "src": "/profile",
-        "dest": "/client/index.html"
-      },
-      {
-        "src": "/login",
-        "dest": "/client/index.html"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/client/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "X-Content-Type-Options", "value": "nosniff" },
-          { "key": "X-Frame-Options", "value": "DENY" }
-        ]
-      }
-    ],
-    "env": {
-      "NODE_ENV": "production",
-      "API_URL": "https://api.notifybear.com"
+    },
+    {
+      "src": "server/index.js",
+      "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/oauth/(.*)",
+      "dest": "/oauth/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/dist/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "API_URL": "https://api.notifybear.com"
   }
-  
+}
