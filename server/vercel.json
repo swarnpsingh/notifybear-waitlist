@@ -9,6 +9,22 @@
         "dest": "/oauth/$1"
       },
       {
+        "src": "/privacy-policy",
+        "dest": "/client/build/index.html"
+      },
+      {
+        "src": "/terms",
+        "dest": "/client/build/index.html"
+      },
+      {
+        "src": "/profile",
+        "dest": "/client/build/index.html"
+      },
+      {
+        "src": "/login",
+        "dest": "/client/build/index.html"
+      },
+      {
         "src": "/(.*)",
         "dest": "/client/build/index.html"
       }
